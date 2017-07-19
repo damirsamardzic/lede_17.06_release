@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2017 OpenWrt.org
 #
-
+CFG=/etc/board.json
 . /lib/functions/uci-defaults.sh
 . /lib/mvebu.sh
 
@@ -23,7 +23,7 @@ armada-a7k-7040-db)
 armada-3720-db)
 	ucidef_set_interfaces_lan_wan "eth1" "eth0"
 	;;
-armada-ESPRESSObin)
+marvell,armada-3720-community)
 	ucidef_set_interfaces_lan_wan "lan0 lan1" "wan"
 	;;
 *)
